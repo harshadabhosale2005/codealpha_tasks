@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="top-bar">
+    <div class="overlay">
+        <h1><bold>MY GALLERY</bold>
+        </h1>
+
+        <div class="buttons">
+            <button onclick="filterImages('all')">All</button>
+            <button onclick="filterImages('fruits')">Fruits</button>
+            <button onclick="filterImages('flowers')">Flowers</button>
+        </div>
+    </div>
+</header>
+    <div class="gallery">
+    <div class="image fruits">
+        <img src="images/fruit1.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image flowers">
+        <img src="images/flower3.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image fruits">
+        <img src="images/fruit3.jpg" onclick="openLightbox(this)">
+    </div>
+
+     <div class="image flowers">
+        <img src="images/flower2.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image fruits">
+        <img src="images/fruit5.jpg" onclick="openLightbox(this)">
+    </div>
+    
+    <div class="image fruits">
+        <img src="images/fruit6.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image flowers">
+        <img src="images/flower5.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image fruits">
+        <img src="images/fruit4.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image fruits">
+        <img src="images/fruit9.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image flowers">
+        <img src="images/flower8.jpg" onclick="openLightbox(this)">
+    </div>
+
+
+    <div class="image flowers">
+        <img src="images/flower11.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image fruits">
+        <img src="images/fruit11.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image fruits">
+        <img src="images/fruit12.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image flowers">
+        <img src="images/flower1.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image fruits">
+        <img src="images/fruit8.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image flowers">
+        <img src="images/flower4.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image fruits">
+        <img src="images/fruit7.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image flowers">
+        <img src="images/flower6.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image flowers">
+        <img src="images/flower7.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image fruits">
+        <img src="images/fruit10.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image flowers">
+        <img src="images/flower9.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image fruits">
+        <img src="images/fruit2.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image flowers">
+        <img src="images/flower10.jpg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image flowers">
+        <img src="images/flower12.jpg" onclick="openLightbox(this)">
+    </div>
+</div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <button class="prev" onclick="changeImage(-1)">❮</button>
+        <img id="lightbox-img">
+        <button class="next" onclick="changeImage(1)">❯</button>
+    </div>
+</body>
+</html>
