@@ -31,7 +31,7 @@ body {
     border: none;
     border-radius: 6px;
     margin-bottom: 15px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .buttons {
