@@ -1,0 +1,190 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f4f4;
+color:#333;
+}
+
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:#111;
+color:white;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:24px;
+font-weight:bold;
+}
+
+.logo span{
+color:#00adb5;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#00adb5;
+}
+
+
+.home{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:#222;
+color:white;
+padding:20px;
+}
+
+.home h1{
+font-size:40px;
+}
+
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:10px 20px;
+background:#00adb5;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.btn:hover{
+background:#007b80;
+}
+
+
+.section{
+padding:60px 5%;
+margin:20px;
+border-radius:10px;
+text-align:center;
+opacity:0;
+transform:translateY(50px);
+transition:all 0.6s ease;
+}
+
+.section h2{
+display:inline-block;
+padding-bottom:8px;
+border-bottom:3px solid #00adb5;
+margin-bottom:25px;
+}
+
+.section:hover{
+background:#e6f7f8;
+}
+
+.skills-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-top:20px;
+}
+
+.skill{
+background:#00adb5;
+padding:10px 20px;
+border-radius:5px;
+color:white;
+}
+#skills h3{
+margin-top:30px;
+margin-bottom:25px;
+}
+
+.project-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.project{
+background:white;
+padding:20px;
+width:100%;
+max-width:300px;
+border-radius:10px;
+transition:all 0.3s ease;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+color:white;
+}
+
+#topBtn{
+position:fixed;
+bottom:20px;
+right:20px;
+height:45px;
+width:45px;
+background:#00adb5;
+color:white;
+border:none;
+border-radius:50%;
+display:none;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+align-items:flex-start;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+.home h1{
+font-size:28px;
+}
+
+.section{
+padding:40px 20px;
+margin:10px;
+}
+
+.skills-container{
+flex-direction:column;
+align-items:center;
+}
+}
